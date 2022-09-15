@@ -55,7 +55,7 @@ class InvisibleReCaptchaComponent extends Component
      */
     protected function _sendRequest()
     {
-        $request = $this->getController()->request;
+        $request = $this->getController()->getRequest();
 
         $http = new Client([
             'timeout' => $this->getConfig('timeout')
