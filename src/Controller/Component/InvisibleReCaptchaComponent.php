@@ -25,7 +25,7 @@ class InvisibleReCaptchaComponent extends Component
     /**
      * {@inheritdoc}
      */
-    public function initialize(array $config)
+    public function initialize(array $config) : void
     {
         if ($this->getConfig('secretkey') === null) {
             $this->setConfig('secretkey', Configure::readOrFail('recaptcha.secretkey'));
